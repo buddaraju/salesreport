@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :sales
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -41,7 +42,7 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-
+root to: "sales#index"
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
