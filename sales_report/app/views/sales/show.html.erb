@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer name:</strong>
+  <%= @sale.customer_name %>
+</p>
+
+<p>
+  <strong>Delvery note date:</strong>
+  <%= @sale.delvery_note_date %>
+</p>
+
+<p>
+  <strong>Delvery note number:</strong>
+  <%= @sale.delvery_note_number %>
+</p>
+
+<p>
+  <strong>Tax invoice date:</strong>
+  <%= @sale.tax_invoice_date %>
+</p>
+
+<p>
+  <strong>Tax invoice number:</strong>
+  <%= @sale.tax_invoice_number %>
+</p>
+
+<p>
+  <strong>Particuars:</strong>
+  <%= @sale.particuars %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @sale.quantity %>
+</p>
+
+<p>
+  <strong>Unit price:</strong>
+  <%= @sale.unit_price %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @sale.value %>
+</p>
+
+<p>
+  <strong>Ppn:</strong>
+  <%= @sale.ppn %>
+</p>
+
+<p>
+  <strong>Tatal amount:</strong>
+  <%= @sale.tatal_amount %>
+</p>
+
+<p>
+  <strong>Payment term days:</strong>
+  <%= @sale.payment_term_days %>
+</p>
+
+<p>
+  <strong>Payment term due date:</strong>
+  <%= @sale.payment_term_due_date %>
+</p>
+
+<p>
+  <strong>Cheque date:</strong>
+  <%= @sale.cheque_date %>
+</p>
+
+<p>
+  <strong>Cheque no:</strong>
+  <%= @sale.cheque_no %>
+</p>
+
+<p>
+  <strong>Cheque cleared:</strong>
+  <%= @sale.cheque_cleared %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @sale.status %>
+</p>
+
+<p>
+  <strong>Days:</strong>
+  <%= @sale.days %>
+</p>
+
+<p>
+  <strong>Interest:</strong>
+  <%= @sale.interest %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @sale.remarks %>
+</p>
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>

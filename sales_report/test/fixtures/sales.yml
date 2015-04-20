@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_name: MyString
+  delvery_note_date: 2015-04-20
+  delvery_note_number: 1
+  tax_invoice_date: 2015-04-20
+  tax_invoice_number: 1
+  particuars: MyString
+  quantity: MyString
+  unit_price: MyString
+  value: MyString
+  ppn: MyString
+  tatal_amount: MyString
+  payment_term_days: 2015-04-20
+  payment_term_due_date: 2015-04-20
+  cheque_date: 2015-04-20
+  cheque_no: 1
+  cheque_cleared: MyString
+  status: MyString
+  days: MyString
+  interest: MyString
+  remarks: MyString
+
+two:
+  customer_name: MyString
+  delvery_note_date: 2015-04-20
+  delvery_note_number: 1
+  tax_invoice_date: 2015-04-20
+  tax_invoice_number: 1
+  particuars: MyString
+  quantity: MyString
+  unit_price: MyString
+  value: MyString
+  ppn: MyString
+  tatal_amount: MyString
+  payment_term_days: 2015-04-20
+  payment_term_due_date: 2015-04-20
+  cheque_date: 2015-04-20
+  cheque_no: 1
+  cheque_cleared: MyString
+  status: MyString
+  days: MyString
+  interest: MyString
+  remarks: MyString

@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customer name</th>
+      <th>Delvery note date</th>
+      <th>Delvery note number</th>
+      <th>Tax invoice date</th>
+      <th>Tax invoice number</th>
+      <th>Particuars</th>
+      <th>Quantity</th>
+      <th>Unit price</th>
+      <th>Value</th>
+      <th>Ppn</th>
+      <th>Tatal amount</th>
+      <th>Payment term days</th>
+      <th>Payment term due date</th>
+      <th>Cheque date</th>
+      <th>Cheque no</th>
+      <th>Cheque cleared</th>
+      <th>Status</th>
+      <th>Days</th>
+      <th>Interest</th>
+      <th>Remarks</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sales.each do |sale| %>
+      <tr>
+        <td><%= sale.customer_name %></td>
+        <td><%= sale.delvery_note_date %></td>
+        <td><%= sale.delvery_note_number %></td>
+        <td><%= sale.tax_invoice_date %></td>
+        <td><%= sale.tax_invoice_number %></td>
+        <td><%= sale.particuars %></td>
+        <td><%= sale.quantity %></td>
+        <td><%= sale.unit_price %></td>
+        <td><%= sale.value %></td>
+        <td><%= sale.ppn %></td>
+        <td><%= sale.tatal_amount %></td>
+        <td><%= sale.payment_term_days %></td>
+        <td><%= sale.payment_term_due_date %></td>
+        <td><%= sale.cheque_date %></td>
+        <td><%= sale.cheque_no %></td>
+        <td><%= sale.cheque_cleared %></td>
+        <td><%= sale.status %></td>
+        <td><%= sale.days %></td>
+        <td><%= sale.interest %></td>
+        <td><%= sale.remarks %></td>
+        <td><%= link_to 'Show', sale %></td>
+        <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
+        <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sale', new_sale_path %>

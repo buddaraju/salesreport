@@ -1,0 +1,97 @@
+<%= form_for(@sale) do |f| %>
+  <% if @sale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sale.errors.count, "error") %> prohibited this sale from being saved:</h2>
+
+      <ul>
+      <% @sale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :customer_name %><br>
+    <%= f.text_field :customer_name %>
+  </div>
+  <div class="field">
+    <%= f.label :delvery_note_date %><br>
+    <%= f.date_select :delvery_note_date %>
+  </div>
+  <div class="field">
+    <%= f.label :delvery_note_number %><br>
+    <%= f.number_field :delvery_note_number %>
+  </div>
+  <div class="field">
+    <%= f.label :tax_invoice_date %><br>
+    <%= f.date_select :tax_invoice_date %>
+  </div>
+  <div class="field">
+    <%= f.label :tax_invoice_number %><br>
+    <%= f.number_field :tax_invoice_number %>
+  </div>
+  <div class="field">
+    <%= f.label :particuars %><br>
+    <%= f.text_field :particuars %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br>
+    <%= f.text_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_price %><br>
+    <%= f.text_field :unit_price %>
+  </div>
+  <div class="field">
+    <%= f.label :value %><br>
+    <%= f.text_field :value %>
+  </div>
+  <div class="field">
+    <%= f.label :ppn %><br>
+    <%= f.text_field :ppn %>
+  </div>
+  <div class="field">
+    <%= f.label :tatal_amount %><br>
+    <%= f.text_field :tatal_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_term_days %><br>
+    <%= f.date_select :payment_term_days %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_term_due_date %><br>
+    <%= f.date_select :payment_term_due_date %>
+  </div>
+  <div class="field">
+    <%= f.label :cheque_date %><br>
+    <%= f.date_select :cheque_date %>
+  </div>
+  <div class="field">
+    <%= f.label :cheque_no %><br>
+    <%= f.number_field :cheque_no %>
+  </div>
+  <div class="field">
+    <%= f.label :cheque_cleared %><br>
+    <%= f.text_field :cheque_cleared %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :days %><br>
+    <%= f.text_field :days %>
+  </div>
+  <div class="field">
+    <%= f.label :interest %><br>
+    <%= f.text_field :interest %>
+  </div>
+  <div class="field">
+    <%= f.label :remarks %><br>
+    <%= f.text_field :remarks %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
