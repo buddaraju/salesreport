@@ -1,0 +1,36 @@
+<div class="title_tools"><abbr id="right_arrow"></abbr>&nbsp;
+      <%= link_to "Add User","/#{controller_name}/new", :class => "btn btn-primary", :title => "New users" %> 
+    </div>
+  <%= flash[:notice] %>
+</p>
+<div class="table_container" xmlns="http://www.w3.org/1999/html">
+<table class="table-bordered display dataTable" id="invoice_detail_table" style="width:100%;margin:auto">
+  <thead>
+    <tr>
+      <th class="tableinvoice" style="text-align:center">Email</th>
+      <th class="tableinvoice" style="text-align:center">First Name</th>
+      <th class="tableinvoice" style="text-align:center">Last Name</th>
+      <th>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td align="center">
+          <%= employee.email %>
+        </td>
+        <td align="center">
+          <%= employee.first_name %>
+        </td>
+        <td align="center">
+          <%= employee.last_name %>
+        </td>
+        <td align="center">
+          <%= link_to image_tag("edit.png"), edit_employee_path(employee.id) %>
+          &nbsp; &nbsp;
+          <%=link_to image_tag("delete.png"), employee, method: :delete, data: { confirm: 'Are you sure' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

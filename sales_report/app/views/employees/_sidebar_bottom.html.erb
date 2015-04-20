@@ -1,0 +1,27 @@
+<div class="panel" style="width: 240px;">
+  <div class="caption">Snapshot </div>
+  <div id="recently_snapshot">
+    <%if current_user%>
+
+        <li class="">
+          <dt>
+            <a href="#">Total Users</a>:
+          </dt>
+          <tt>  <%= @users_count %>
+
+          </tt>
+        </li>
+        <li class="">
+          <dt>
+            <a href="#">Total Invoices</a>:
+          </dt>
+          <tt>  <%= @invoice_details_count %>
+
+          </tt>
+        </li>
+
+    <%end%>
+  </div>
+</div>
+
+

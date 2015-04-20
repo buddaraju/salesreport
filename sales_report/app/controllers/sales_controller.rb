@@ -69,6 +69,6 @@ class SalesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sale_params
-      params.require(:sale).permit(:customer_name, :delvery_note_date, :delvery_note_number, :tax_invoice_date, :tax_invoice_number, :particuars, :quantity, :unit_price, :value, :ppn, :tatal_amount, :payment_term_days, :payment_term_due_date, :cheque_date, :cheque_no, :cheque_cleared, :status, :days, :interest, :remarks)
+      params.require(:sale).permit(:customer_name, :delvery_note_date, :delvery_note_number, :tax_invoice_date, :tax_invoice_number, :particuars, :quantity, :unit_price, :value, :ppn, :tatal_amount, :payment_term_days, :payment_term_due_date, :cheque_date, :cheque_no, :cheque_cleared, :status, :days, :interest, :remarks, :user_id)
     end
 end

@@ -21,8 +21,10 @@ class CreateSales < ActiveRecord::Migration
       t.string :days
       t.string :interest
       t.string :remarks
+      t.references :user, index: true
 
       t.timestamps null: false
     end
+    add_foreign_key :sales, :users
   end
 end

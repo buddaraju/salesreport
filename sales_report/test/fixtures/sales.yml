@@ -21,6 +21,7 @@ one:
   days: MyString
   interest: MyString
   remarks: MyString
+  user_id: 
 
 two:
   customer_name: MyString
@@ -43,3 +44,4 @@ two:
   days: MyString
   interest: MyString
   remarks: MyString
+  user_id: 

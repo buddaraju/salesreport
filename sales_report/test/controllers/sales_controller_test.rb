@@ -18,7 +18,7 @@ class SalesControllerTest < ActionController::TestCase
 
   test "should create sale" do
     assert_difference('Sale.count') do
-      post :create, sale: { cheque_cleared: @sale.cheque_cleared, cheque_date: @sale.cheque_date, cheque_no: @sale.cheque_no, customer_name: @sale.customer_name, days: @sale.days, delvery_note_date: @sale.delvery_note_date, delvery_note_number: @sale.delvery_note_number, interest: @sale.interest, particuars: @sale.particuars, payment_term_days: @sale.payment_term_days, payment_term_due_date: @sale.payment_term_due_date, ppn: @sale.ppn, quantity: @sale.quantity, remarks: @sale.remarks, status: @sale.status, tatal_amount: @sale.tatal_amount, tax_invoice_date: @sale.tax_invoice_date, tax_invoice_number: @sale.tax_invoice_number, unit_price: @sale.unit_price, value: @sale.value }
+      post :create, sale: { cheque_cleared: @sale.cheque_cleared, cheque_date: @sale.cheque_date, cheque_no: @sale.cheque_no, customer_name: @sale.customer_name, days: @sale.days, delvery_note_date: @sale.delvery_note_date, delvery_note_number: @sale.delvery_note_number, interest: @sale.interest, particuars: @sale.particuars, payment_term_days: @sale.payment_term_days, payment_term_due_date: @sale.payment_term_due_date, ppn: @sale.ppn, quantity: @sale.quantity, remarks: @sale.remarks, status: @sale.status, tatal_amount: @sale.tatal_amount, tax_invoice_date: @sale.tax_invoice_date, tax_invoice_number: @sale.tax_invoice_number, unit_price: @sale.unit_price, user_id: @sale.user_id, value: @sale.value }
     end
 
     assert_redirected_to sale_path(assigns(:sale))
@@ -35,7 +35,7 @@ class SalesControllerTest < ActionController::TestCase
   end
 
   test "should update sale" do
-    patch :update, id: @sale, sale: { cheque_cleared: @sale.cheque_cleared, cheque_date: @sale.cheque_date, cheque_no: @sale.cheque_no, customer_name: @sale.customer_name, days: @sale.days, delvery_note_date: @sale.delvery_note_date, delvery_note_number: @sale.delvery_note_number, interest: @sale.interest, particuars: @sale.particuars, payment_term_days: @sale.payment_term_days, payment_term_due_date: @sale.payment_term_due_date, ppn: @sale.ppn, quantity: @sale.quantity, remarks: @sale.remarks, status: @sale.status, tatal_amount: @sale.tatal_amount, tax_invoice_date: @sale.tax_invoice_date, tax_invoice_number: @sale.tax_invoice_number, unit_price: @sale.unit_price, value: @sale.value }
+    patch :update, id: @sale, sale: { cheque_cleared: @sale.cheque_cleared, cheque_date: @sale.cheque_date, cheque_no: @sale.cheque_no, customer_name: @sale.customer_name, days: @sale.days, delvery_note_date: @sale.delvery_note_date, delvery_note_number: @sale.delvery_note_number, interest: @sale.interest, particuars: @sale.particuars, payment_term_days: @sale.payment_term_days, payment_term_due_date: @sale.payment_term_due_date, ppn: @sale.ppn, quantity: @sale.quantity, remarks: @sale.remarks, status: @sale.status, tatal_amount: @sale.tatal_amount, tax_invoice_date: @sale.tax_invoice_date, tax_invoice_number: @sale.tax_invoice_number, unit_price: @sale.unit_price, user_id: @sale.user_id, value: @sale.value }
     assert_redirected_to sale_path(assigns(:sale))
   end
 

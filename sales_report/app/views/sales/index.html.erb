@@ -25,6 +25,7 @@
       <th>Days</th>
       <th>Interest</th>
       <th>Remarks</th>
+      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -52,6 +53,7 @@
         <td><%= sale.days %></td>
         <td><%= sale.interest %></td>
         <td><%= sale.remarks %></td>
+        <td><%= sale.user %></td>
         <td><%= link_to 'Show', sale %></td>
         <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
         <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
